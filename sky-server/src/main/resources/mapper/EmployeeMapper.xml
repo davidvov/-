@@ -8,8 +8,8 @@
             <if test = "name != null and name != ''">
                 and name like concat('%',#{name},'%')
             </if>
-        order by create_time desc
         </where>
+        order by create_time desc
     </select>
     <update id="update" parameterType="Employee">
         update employee
